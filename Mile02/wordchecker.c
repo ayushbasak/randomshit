@@ -1,12 +1,16 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
+#include <time.h>
 
 void init(int * succ){
   for(int k = 0;k<26;k++){
     succ[k] = 0;
   }
 }
+
 int checkPresence(char * bag,char* word) {
   int posword[26];
   int posbag[26];
